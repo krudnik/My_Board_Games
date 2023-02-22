@@ -45,9 +45,15 @@ public class PlayController {
     }
 
     @PostMapping("/play/add")
-    @ResponseBody
     public String addPlay(Play play, Model model) {
         playDao.savePlay(play);
-        return play.toString();
+        return "redirect:/play/list";
+    }
+
+    @GetMapping("/play/list")
+    public String listPlayUser(Model model) {
+        List<Play> plays = playDao.findAll();
+        model.addAttribute("plays", plays);
+        return "/play/list";
     }
 }

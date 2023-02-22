@@ -2,6 +2,7 @@ package pl.coderslab.user;
 
 import org.springframework.stereotype.Repository;
 import pl.coderslab.game.Game;
+import pl.coderslab.playuser.PlayUser;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -27,6 +28,12 @@ public class UserDao {
         TypedQuery<User> query = entityManager.createQuery("select u from User u", User.class);
         List<User> users = query.getResultList();
         return users;
+    }
+
+    public List<PlayUser> results(User user){
+        TypedQuery<PlayUser> query = entityManager.createQuery("select pu from PlayUser pu where pu.user = :user", PlayUser.class);
+                query.setParameter("user", user);
+        return query.getResultList();
     }
 
     public void delete(User user) {

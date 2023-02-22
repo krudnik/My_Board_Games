@@ -33,5 +33,13 @@ public class GameDao {
         Game game = entityManager.find(Game.class, id);
         return game;
     }
+    public void delete(Game game) {
+        Game persistedGame = entityManager.contains(game) ? game : entityManager.merge(game);
+        entityManager.remove(persistedGame);
+    }
+
+    public void update(Game game) {
+        entityManager.merge(game);
+    }
 
 }

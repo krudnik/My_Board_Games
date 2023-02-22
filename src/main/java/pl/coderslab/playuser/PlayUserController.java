@@ -13,6 +13,7 @@ import pl.coderslab.play.PlayDao;
 import pl.coderslab.user.User;
 import pl.coderslab.user.UserDao;
 
+import java.awt.print.Book;
 import java.util.List;
 
 @Controller
@@ -53,9 +54,15 @@ public class PlayUserController {
     }
 
     @PostMapping("/playUser/add")
-    @ResponseBody
     public String addPlay(PlayUser playUser, Model model) {
         playUserDao.savePlay(playUser);
-        return playUser.toString();
+        return "redirect:/";
+    }
+
+    @GetMapping("/")
+    public String listPlayUser(Model model) {
+        List<PlayUser> playUsers = playUserDao.findAll();
+        model.addAttribute("playUsers", playUsers);
+        return "/playUser/list";
     }
 }

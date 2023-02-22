@@ -2,13 +2,12 @@ package pl.coderslab.game;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
+import pl.coderslab.playuser.PlayUser;
 import pl.coderslab.user.User;
 
 import java.util.Collection;
+import java.util.List;
 
 @Controller
 public class GameController {
@@ -23,16 +22,42 @@ public class GameController {
 
     public String addGameForm(Model model) {
         Game predefinedGame = new Game();
-        predefinedGame.setTitle("plansza");
         model.addAttribute("game", predefinedGame);
         return "/game/add";
     }
 
     @PostMapping("/game/add")
-    @ResponseBody
     public String addUser(Game game, Model model) {
         gameDao.saveGame(game);
-        return game.toString();
+        return "redirect:/game/list";
+    }
+
+    @RequestMapping("/game/delete/{id}")
+    public String deleteGame(@PathVariable long id) {
+        Game game = gameDao.findById(id);
+        gameDao.delete(game);
+        return "redirect:/game/list";
+    }
+
+    @GetMapping("/game/edit/{id}")
+    public String editGame(@PathVariable long id, Model model) {
+        Game gameToEdit = gameDao.findById(id);
+        model.addAttribute("gameToEdit", gameToEdit);
+        return "/game/edit";
+    }
+
+    @PostMapping("/game/edit/save/{id}")
+    public String editUser(Game game, @PathVariable long id) {
+        game.setId(id);
+        gameDao.update(game);
+        return "redirect:/game/list";
+    }
+
+    @GetMapping("/game/list")
+    public String listPlayUser(Model model) {
+        List<Game> games = gameDao.findAll();
+        model.addAttribute("games", games);
+        return "/game/list";
     }
 
 }
