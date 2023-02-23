@@ -22,8 +22,6 @@
     <a href="/playUser/add">add new player's score</a>
 </p>
 
-<%--przeskakuje do widoku, w którym konkretnemu graczó w konkretnej grze przypisuje konretne punkty i rozgrywkę.--%>
-
 <form:form method="post" modelAttribute="play">
     <label for="game" style="padding: 10px 10px 7px;">game title</label>
     <br>

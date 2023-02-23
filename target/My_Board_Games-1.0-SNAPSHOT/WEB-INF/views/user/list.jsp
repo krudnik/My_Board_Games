@@ -36,5 +36,8 @@
   <p>
     <a href="/play/add">add new play</a>
   </p>
+<p>
+  <a href="/">show scores list</a>
+</p>
 </body>
 </html>

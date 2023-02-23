@@ -61,10 +61,6 @@ public class AppConfig implements WebMvcConfigurer {
         return jpaTransactionManager;
     }
 
-//    @Bean
-//    public Validator validator() {
-//        return new LocalValidatorFactoryBean();
-//    }
 
     @Bean(name = "localeResolver")
     public LocaleContextResolver getLocaleContextResolver() {

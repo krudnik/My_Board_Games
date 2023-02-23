@@ -14,6 +14,7 @@
     <th>max players</th>
     <th>Description</th>
     <th>Rating</th>
+    <th>Statistics</th>
     <th>Delete</th>
     <th>Edit</th>
   </tr>
@@ -26,6 +27,7 @@
       <td><c:out value="${game.maxPlayers}"/></td>
       <td><c:out value="${game.description}"/></td>
       <td><c:out value="${game.rating}"/></td>
+      <td><a href="/game/statistics/${game.id}">statistics</a></td>
       <td><a href="/game/delete/${game.id}">delete</a></td>
       <td><a href="/game/edit/${game.id}">edit</a></td>
     </tr>
@@ -40,6 +42,9 @@
   <p>
     <a href="/play/add">add new play</a>
   </p>
+<p>
+  <a href="/">show scores list</a>
+</p>
 
 </body>
 </html>

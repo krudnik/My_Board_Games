@@ -60,4 +60,14 @@ public class GameController {
         return "/game/list";
     }
 
+    @GetMapping("/game/statistics/{id}")
+    public String results(@PathVariable int id, Model model){
+        Game game = gameDao.findById(id);
+        List<PlayUser> maxPoints = gameDao.maxPoints(game);
+        Double avgPoints = gameDao.avgPoints(game);
+        model.addAttribute("maxPoints", maxPoints);
+        model.addAttribute("avgPoints", avgPoints);
+        return "/game/statistics";
+    }
+
 }

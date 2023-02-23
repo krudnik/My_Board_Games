@@ -10,30 +10,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="604f479c-4433-4a8e-a874-e74a48c7f08b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/game/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/game/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/play/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/playUser/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/userPlays.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/game/statistics.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/AppConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/game/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/game/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/game/GameDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/game/GameDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/play/PlayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/play/PlayController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/playuser/PlayUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/playuser/PlayUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/user/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/user/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/user/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/game/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/game/add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/game/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/game/list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/play/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/play/add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/playUser/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/playUser/add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/My_Board_Games-1.0-SNAPSHOT/WEB-INF/classes/pl/coderslab/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/My_Board_Games-1.0-SNAPSHOT/WEB-INF/classes/pl/coderslab/AppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/My_Board_Games-1.0-SNAPSHOT/WEB-INF/classes/pl/coderslab/game/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/My_Board_Games-1.0-SNAPSHOT/WEB-INF/classes/pl/coderslab/game/GameController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/My_Board_Games-1.0-SNAPSHOT/WEB-INF/classes/pl/coderslab/game/GameDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/My_Board_Games-1.0-SNAPSHOT/WEB-INF/classes/pl/coderslab/game/GameDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/My_Board_Games-1.0-SNAPSHOT/WEB-INF/views/game/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/My_Board_Games-1.0-SNAPSHOT/WEB-INF/views/game/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/My_Board_Games-1.0-SNAPSHOT/WEB-INF/views/play/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/My_Board_Games-1.0-SNAPSHOT/WEB-INF/views/play/add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/My_Board_Games-1.0-SNAPSHOT/WEB-INF/views/user/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/My_Board_Games-1.0-SNAPSHOT/WEB-INF/views/user/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/coderslab/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/coderslab/AppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/coderslab/game/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/coderslab/game/GameController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/coderslab/game/GameDao.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -203,7 +196,7 @@
       <workItem from="1677060510339" duration="1263000" />
       <workItem from="1677064353574" duration="626000" />
       <workItem from="1677066983694" duration="11097000" />
-      <workItem from="1677085124464" duration="4950000" />
+      <workItem from="1677085124464" duration="15165000" />
     </task>
     <servers />
   </component>
